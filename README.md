@@ -53,12 +53,10 @@
         <button class="yes" onclick="sayYes()">A takoż</button>
         <button class="no" onclick="sayNo()">Nie raczę</button>
     </div>
-
     <script>
         function sayYes() {
             alert(" Raduję się, iż rzekłaś A takoż! ❤️");
         }
-
         function sayNo() {
             alert("Wiem że to było przez przypadek");
         }
