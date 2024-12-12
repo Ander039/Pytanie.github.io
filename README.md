@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -66,10 +67,12 @@
     </div>
     <script>
         function sayYes() {
-            alert("Raduję się, iż rzekłaś A takoż! ❤️");
+            const popup = document.querySelector('.popup');
+            popup.innerHTML = '<h1 style="color: green;">Raduję się, iż rzekłaś A takoż! ❤️</h1>';
         }
         function sayNo() {
-            alert("Wiem że to było przez przypadek");
+            const popup = document.querySelector('.popup');
+            popup.innerHTML = '<h1 style="color: red;">Wiem że to było przez przypadek...</h1>';
         }
     </script>
 </body>
