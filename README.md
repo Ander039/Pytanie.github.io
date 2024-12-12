@@ -1,4 +1,3 @@
-
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -31,12 +30,25 @@
             border: none;
             border-radius: 4px;
             color: white;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        button:hover {
+            transform: scale(1.1); /* Powiększenie przy najechaniu */
+        }
+        button:active {
+            transform: scale(0.9); /* Zmniejszenie przy kliknięciu */
         }
         .yes {
             background-color: #4caf50;
         }
+        .yes:hover {
+            background-color: #45a049; /* Jaśniejszy odcień zieleni */
+        }
         .no {
             background-color: #f44336;
+        }
+        .no:hover {
+            background-color: #e53935; /* Jaśniejszy odcień czerwieni */
         }
         .header {
             font-size: 24px;
@@ -54,7 +66,7 @@
     </div>
     <script>
         function sayYes() {
-            alert(" Raduję się, iż rzekłaś A takoż! ❤️");
+            alert("Raduję się, iż rzekłaś A takoż! ❤️");
         }
         function sayNo() {
             alert("Wiem że to było przez przypadek");
